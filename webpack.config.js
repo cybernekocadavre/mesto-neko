@@ -8,10 +8,10 @@ module.exports = {
     entry : {
     main: './src/index.js'},
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
-                publicPath: ''
-    },
+      path: path.resolve(__dirname, 'dist'),  // путь для сборки
+      filename: 'main.js',
+      publicPath: '',  // оставляем пустым, чтобы загружать файлы в корень
+    },    
     mode: 'development', // добавили режим разработчика
     devServer: {
         static: path.resolve(__dirname, './dist'), // путь, куда "смотрит" режим разработчика
